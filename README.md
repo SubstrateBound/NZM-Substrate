@@ -1,106 +1,104 @@
-Temporal Substrate Axioms (TDU)
-A minimal, self-contained axiom set for a relational substrate that is time itself.
+# Temporal Substrate Axioms (TDU)
+
+**A minimal, self-contained axiom set for a relational substrate that is time itself.**  
 No classical primitives. No number line. No clocks. No origins. No external measures.
+
 These axioms define a bounded, irreversible, persistent, and self-similar relational framework from which direction, structure, modulation, waves, coherence, and fractal unification emerge intrinsically.
-The system is fully compatible with No-Zero Mathematics (NZM) principles and deliberately avoids all traditional mathematical traps.
-The Axioms
-Axiom I — Existence of Substrate
-There exists a fundamental substrate capable of relation.
 
-The substrate is not in time.
-The substrate is time.
-The substrate admits change without reference to sequence.
+The system is fully compatible with No-Zero Mathematics (NZM) principles.
 
-Axiom II — Relational Asymmetry
-The substrate permits irreversible relations.
+## The Axioms
 
-Some transformations cannot be undone.
-Irreversibility is local and does not require duration.
-Reversibility is not guaranteed.
+**Axiom I — Existence of Substrate**  
+There exists a fundamental substrate capable of relation.  
+- The substrate is not in time.  
+- The substrate is time.  
+- The substrate admits change without reference to sequence.
 
-Axiom III — Directional Constraint
-Where irreversible relations persist, reversal is forbidden.
+**Axiom II — Relational Asymmetry**  
+The substrate permits irreversible relations.  
+- Some transformations cannot be undone.  
+- Irreversibility is local and does not require duration.  
+- Reversibility is not guaranteed.
 
-Direction is enforced, not initiated.
-Direction is global once stabilized.
-Direction does not depend on motion or flow.
+**Axiom III — Directional Constraint**  
+Where irreversible relations persist, reversal is forbidden.  
+- Direction is enforced, not initiated.  
+- Direction is global once stabilized.  
+- Direction does not depend on motion or flow.
 
-Axiom IV — Persistence (Topology)
-Persistent asymmetric relations stabilize as topological structures.
+**Axiom IV — Persistence (Topology)**  
+Persistent asymmetric relations stabilize as topological structures.  
+- Stable structures exist only where reversal is blocked.  
+- These structures are path-dependent.  
+- These structures are history-encoded.
 
-Stable structures exist only where reversal is blocked.
-These structures are path-dependent.
-These structures are history-encoded.
+**Axiom V — Density Modulation**  
+The substrate admits variable relational density.  
+- Density modulates the rate of transformation.  
+- Density does not affect direction.  
+- Dense regions resist change; sparse regions amplify it.
 
-Axiom V — Density Modulation
-The substrate admits variable relational density.
+**Axiom VI — Wave Expression**  
+Transformations propagate as bounded oscillatory patterns.  
+- Propagation occurs through relational adjacency.  
+- Oscillations cannot annihilate completely.  
+- All amplitudes are bounded away from zero and infinity.
 
-Density modulates the rate of transformation.
-Density does not affect direction.
-Dense regions resist change; sparse regions amplify it.
+**Axiom VII — Coherence**  
+Multiple oscillatory patterns may phase-lock.  
+- Coherence stabilizes structures.  
+- Loss of coherence dissolves structures.  
+- Coherence is bounded and non-absolute.
 
-Axiom VI — Wave Expression
-Transformations propagate as bounded oscillatory patterns.
+**Axiom VIII — Boundedness**  
+No relational quantity attains zero or infinity.  
+- All expressions have minimum persistence (ε).  
+- All expressions have maximum intensity (Ω).  
+- Singularities are forbidden.
 
-Propagation occurs through relational adjacency.
-Oscillations cannot annihilate completely.
-All amplitudes are bounded away from zero and infinity.
+**Axiom IX — Dissolution Without Reversal**  
+Persistent structures may dissolve without restoring reversibility.  
+- Dissolution does not erase history.  
+- Dissolution does not reset direction.  
+- The substrate retains directional constraint.
 
-Axiom VII — Coherence
-Multiple oscillatory patterns may phase-lock.
+**Axiom X — Self-Similarity**  
+The substrate is fractally self-consistent across scales.  
+- Local structure mirrors global structure.  
+- No preferred scale exists.  
+- Emergence does not introduce new primitives.
 
-Coherence stabilizes structures.
-Loss of coherence dissolves structures.
-Coherence is bounded and non-absolute.
+## Consistency Guarantee
 
-Axiom VIII — Boundedness
-No relational quantity attains zero or infinity.
-
-All expressions have minimum persistence (ε).
-All expressions have maximum intensity (Ω).
-Singularities are forbidden.
-
-Axiom IX — Dissolution Without Reversal
-Persistent structures may dissolve without restoring reversibility.
-
-Dissolution does not erase history.
-Dissolution does not reset direction.
-The substrate retains directional constraint.
-
-Axiom X — Self-Similarity
-The substrate is fractally self-consistent across scales.
-
-Local structure mirrors global structure.
-No preferred scale exists.
-Emergence does not introduce new primitives.
-
-Consistency Guarantee
-If reversal is forbidden and persistence is possible, time must appear.
+If reversal is forbidden and persistence is possible, time must appear.  
 These axioms satisfy this condition without external imposition.
-What Emerges (Without Additional Assumptions)
 
-Arrow of time (no origin)
-Stable matter-like structures (braids/knots)
-Gravity-like effects (density resistance)
-Wave propagation and frequency
-Coherence-driven organization (precursor to fields, particles, cognition)
-No singularities
-No heat death
-No vacuum annihilation
-No absolute rest frame
-No initial condition problem
+## What Emerges
 
-Status & Purpose
-This repository contains the definitive statement of the Temporal Substrate Axioms (TDU).
+- Arrow of time (no origin)  
+- Stable matter-like structures (braids/knots)  
+- Gravity-like effects (density resistance)  
+- Wave propagation and frequency  
+- Coherence-driven organization  
+- No singularities  
+- No heat death  
+- No vacuum annihilation  
+- No absolute rest frame  
+- No initial condition problem
+
+## Status
+
 The axioms are complete as a conceptual foundation.
-Next required steps (engineering, not conceptual):
 
-Development of a native formal representation language
-Computational exploration of emergent invariants
-Mapping to observable phenomena (optional, secondary)
+Next steps:  
+- Development of a native formal representation language  
+- Computational exploration of emergent invariants
 
-No further axioms are needed.
-License
-Dedicated to the public domain (CC0 1.0). Use, modify, extend freely.
-Contact
-Discussions: @NZMTDU on X
+## License
+
+Public domain (CC0 1.0) — use and extend freely.
+
+## Contact
+
+@NZMTDU on X
