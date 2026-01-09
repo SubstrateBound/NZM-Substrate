@@ -1,4 +1,5 @@
-# Temporal Substrate Axioms (TDU)
+# Temporal Substrate Axioms
+
 
 **A minimal, self-contained axiom set for a relational substrate that is time itself.**  
 No classical primitives. No number line. No clocks. No origins. No external measures.
