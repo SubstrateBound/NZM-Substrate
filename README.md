@@ -100,6 +100,10 @@ Next steps:
 
 Public domain (CC0 1.0) — use and extend freely.
 
-## Contact
+## Contact X @NZMTDU or via issues/PRs
+
+## Daily Viewer Question – January 12, 2026
+What does it mean for time to *be* the substrate, rather than something that happens *in* a substrate?  
+Thoughts welcome on X @NZMTDU or via issues/PRs.
 
 @NZMTDU on X
