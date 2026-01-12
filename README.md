@@ -1,3 +1,24 @@
+## Quick Summary: What Is NZM-Substrate?
+
+This repository defines a **physics-agnostic, non-numerical substrate** in which **time is the fundamental relational structure**, not a parameter of events or a coordinate in a background space.
+
+**Why is it different from classical physics?**  
+It rejects all classical primitives: no number line, no external clock, no origin point, no metric, no absolute rest frame, and crucially — **no zero or infinity** as relational values.
+
+**Why reject zero and infinity?**  
+Zero implies annihilation/reset (forbidden by persistence and irreversibility), while infinity implies unbounded singularities (forbidden by boundedness). By enforcing strict ε > 0 and Ω < ∞ bounds everywhere, the substrate avoids classical pathologies like singularities, vacuum energy catastrophe, heat death, and initial-condition problems — all while remaining fully compatible with No-Zero Mathematics (NZM).
+
+**What problems does it solve intrinsically?**  
+- Arrow of time without needing a beginning  
+- Emergence of stable structures (matter-like) from pure relations  
+- Gravity-like attraction via density resistance  
+- Wave propagation & coherence without background spacetime  
+- No singularities, no absolute voids, no reversible erasure  
+
+The 10 axioms are complete as a minimal foundation. Everything else (space, particles, forces) emerges relationally.
+
+→ Dive into the axioms below...
+
 # Temporal Substrate Axioms
 
 
