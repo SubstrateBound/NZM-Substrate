@@ -333,7 +333,9 @@ Contact
 X: @NZMTDU
 Issues / PRs welcome.
 
-## Daily Viewer Question – January 12, 2026
-If irreversibility is local and doesn't require a pre-existing clock, how might the arrow of time first stabilize in the substrate?
+## Daily Viewer Question – January 13, 2026
+If direction is enforced rather than initiated, what distinguishes direction from motion?
+
+** If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics? **
 
 @NZMTDU on X
