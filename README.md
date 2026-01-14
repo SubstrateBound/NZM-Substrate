@@ -343,3 +343,5 @@ Direction is a constraint on allowable transformations; motion is an emergent pa
 ** If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics? **
 
 @NZMTDU on X
+## AI Agent Support
+See deepseek.yml and openai.json for manifest files guiding AI tools/agents on how to parse and reason about this substrate.
