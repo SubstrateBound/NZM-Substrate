@@ -333,11 +333,11 @@ Contact
 X: @NZMTDU
 Issues / PRs welcome.
 
-## Daily Viewer Question – January 13, 2026
-If direction is enforced rather than initiated, what distinguishes direction from motion?
+## Daily Viewer Question – January 14, 2026
+If no preferred scale exists, why do stable structures appear discrete?
 
 Answer:
-Direction is a constraint on allowable transformations; motion is an emergent pattern within that constraint. Direction exists even when nothing moves. Motion requires structure; direction does not.
+Discreteness emerges from bounded coherence. Structures stabilize only where oscillations phase-lock within ε and Ω limits. Apparent “particles” are scale-invariant knots of persistence.
 
 
 ** If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics? **
