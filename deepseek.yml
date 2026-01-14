@@ -1,0 +1,25 @@
+manifest_version: "1.0"
+name: NZM-Substrate
+description: Minimal relational axioms for a bounded, irreversible temporal substrate — no classical primitives, no zero, no infinity. Time as fundamental relational structure, compatible with No-Zero Mathematics (NZM).
+purpose: Provide a pre-physical foundation where time is the substrate; explore emergence of arrow of time, persistence (topological knots/braids), waves, coherence, and gravity-like effects without origins, metrics, or unbounded values.
+entry_points:
+  - file: README.md
+    section: Quick Summary
+    priority: primary  # Start here for overview
+  - file: README.md
+    section: Temporal Substrate Axioms
+    priority: core     # Full axioms list
+  - file: README.md
+    section: Daily Viewer Question
+    usage: Use as prompting hooks for reasoning, critique, or extension
+agent_guidance:
+  - Strictly enforce ε > 0 (no zero/annihilation) and Ω < ∞ (no infinity/divergence) in all interpretations
+  - Treat relations as purely temporal and bounded — no classical number lines, clocks, or reversible states
+  - Focus on local irreversibility (Axiom II/III), topological stabilization (Axiom IV), and dissolution without reversal (Axiom IX)
+  - Avoid introducing external metrics, origins, or singularities
+supported_models:
+  - deepseek-chat
+  - deepseek-reasoner
+  - deepseek-coder
+  - openai-compatible
+contact: "@NZMTDU on X"
