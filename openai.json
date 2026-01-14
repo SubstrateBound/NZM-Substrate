@@ -1,0 +1,35 @@
+{
+  "manifest_version": "1.0",
+  "name": "NZM-Substrate",
+  "description": "Conceptual foundation: bounded irreversible temporal substrate axioms. Rejects zero/infinity/classical primitives. Time as pure relational structure.",
+  "purpose": "Seed for re-grounding physics in relational temporality; emergent direction, persistence, waves without singularities or annihilation.",
+  "entry_points": [
+    {
+      "file": "README.md",
+      "section": "Quick Summary",
+      "priority": "primary"
+    },
+    {
+      "file": "README.md",
+      "section": "Temporal Substrate Axioms",
+      "priority": "core"
+    },
+    {
+      "file": "README.md",
+      "section": "Daily Viewer Question",
+      "usage": "Prompting/exploration hooks"
+    }
+  ],
+  "agent_guidance": [
+    "Reject zero and infinity in reasoning — enforce strict bounds only",
+    "Interpret irreversibility as local and primitive (no clock/origin needed)",
+    "Emphasize topological knots/braids for persistence stabilization",
+    "History preserved on dissolution (no reversal or erasure)"
+  ],
+  "supported_models": [
+    "gpt-4o",
+    "gpt-4-turbo",
+    "o1-preview",
+    "deepseek-compatible"
+  ]
+}
