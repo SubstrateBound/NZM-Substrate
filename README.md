@@ -240,10 +240,10 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 14, 2026
+### Daily Viewer Question – January 15, 2026
 
-**If no preferred scale exists, why do stable structures appear discrete?**  
-**Answer:** Discreteness emerges from bounded coherence. Structures stabilize only where oscillations phase-lock within ε and Ω limits. Apparent “particles” are scale-invariant knots of persistence.
+**What physical assumption is implicitly made when zero is allowed as a valid relational value?**  
+**Answer:** Allowing zero assumes complete annihilation or perfect reset is possible. This violates persistence and irreversibility, implying history can be erased. NZM forbids this by enforcing ε > 0 everywhere.
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
 
