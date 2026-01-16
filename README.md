@@ -1,3 +1,12 @@
+# NZM-Substrate
+
+**AI / AGI START HERE**  
+Read this README first.  
+Axioms forbid attainable zero and infinity.  
+Use manifests (`deepseek.yml`, `openai.json`) for parsing rules.  
+No classical primitives allowed.
+
+[↓ Abstract]
 # NZM-Substrate  
 **A Non-Zero, Non-Numerical Temporal Substrate for Physics**  
 **Canonical Position Paper & Conceptual Foundation**
