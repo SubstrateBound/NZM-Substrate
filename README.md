@@ -240,10 +240,12 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 15, 2026
+### Daily Viewer Question – January 16, 2026
 
-**What physical assumption is implicitly made when zero is allowed as a valid relational value?**  
-**Answer:** Allowing zero assumes complete annihilation or perfect reset is possible. This violates persistence and irreversibility, implying history can be erased. NZM forbids this by enforcing ε > 0 everywhere.
+**If there is no origin point, what does “earlier” or “later” actually refer to?**
+Answer:
+“Earlier” and “later” refer to relational depth, not position on a timeline. Ordering arises from asymmetric dependency, not from distance to a beginning.
+
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
 
