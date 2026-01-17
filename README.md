@@ -249,11 +249,18 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 16, 2026
+### Daily Viewer Question – January 17, 2026
 
 **If there is no origin point, what does “earlier” or “later” actually refer to?**
-Answer:
-“Earlier” and “later” refer to relational depth, not position on a timeline. Ordering arises from asymmetric dependency, not from distance to a beginning.
+
+### Answer:
+“Earlier” and “later” refer to relational depth, not position on a timeline.
+
+Ordering arises from asymmetric dependency: one relation depends on another in a way that cannot be reversed (Axiom III). The “earlier” state is the one that must exist for the “later” state to be possible. There is no t = 0 starting point and no global clock measuring distance from a beginning.
+
+The substrate simply has layers of dependency — some relations are more foundational than others. “Earlier” = deeper in the dependency structure, “later” = built upon it.
+
+This is why direction does not need to be initiated: it is enforced wherever irreversible relations persist (Axiom III).
 
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
