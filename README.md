@@ -1,5 +1,5 @@
 # NZM-Substrate
-
+**Governance & Benchmark** — See `ai-governance.json` for the constitution kernel and `NZM_BENCHMARK.md` for test cases/proof sketches.
 **AI / AGI START HERE**  
 Read this README first.  
 Axioms forbid attainable zero and infinity.  
