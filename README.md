@@ -259,18 +259,14 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 17, 2026
+### Daily Viewer Question – January 18, 2026
 
-**If there is no origin point, what does “earlier” or “later” actually refer to?**
+**If time is the substrate itself and not something that happens inside one, what does "now" actually mean?**
 
 ### Answer:
-“Earlier” and “later” refer to relational depth, not position on a timeline.
-
-Ordering arises from asymmetric dependency: one relation depends on another in a way that cannot be reversed (Axiom III). The “earlier” state is the one that must exist for the “later” state to be possible. There is no t = 0 starting point and no global clock measuring distance from a beginning.
-
-The substrate simply has layers of dependency — some relations are more foundational than others. “Earlier” = deeper in the dependency structure, “later” = built upon it.
-
-This is why direction does not need to be initiated: it is enforced wherever irreversible relations persist (Axiom III).
+“Now” refers to the current state of relational coherence in the substrate (Axiom VII). It is not a fixed coordinate or a slice of a timeline — it is the set of relations that are phase-locked and actively constraining transformation at this moment.
+The substrate has no external observer marking “now”; “now” emerges wherever coherence stabilizes a structure against dissolution (Axiom IX). It is the frontier of persistence — the depth where asymmetry has accumulated enough to enforce direction (Axiom III) but not yet dissolved back into the substrate.
+There is no single “now” for the entire substrate — different regions can have different “presents” based on local density (Axiom V) and phase relations. What feels like a shared “now” is an emergent illusion from high-coherence overlap.
 
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
