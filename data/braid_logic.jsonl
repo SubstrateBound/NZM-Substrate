@@ -8,3 +8,13 @@
 {"input": "Substrate_Tension_T1", "nzm_op": "σ2σ3σ2σ1", "temporal_depth": "ℓ-7", "result": "Gravity_Like_Residue", "epsilon": "0.0292", "status": "PASS"}
 {"input": "Recursive_Folding_R1", "nzm_op": "σ1(σ2σ1)σ1", "temporal_depth": "ℓ-8", "result": "Fractal_Self_Similarity", "epsilon": "0.0365", "status": "PASS"}
 {"input": "Minimum_Persistence_Check", "nzm_op": "σ1σ1-inv", "temporal_depth": "ℓ-9", "result": "ε_Residue_Required", "epsilon": "0.0001", "status": "PASS"}
+{"id": 1, "op": "σ1", "type": "Elementary_Persistence", "density": "0.0073", "residue": "ε", "limit_check": "NON_ZERO"}
+{"id": 2, "op": "σ1σ2", "type": "Coupled_Flow", "density": "0.0146", "residue": "2ε", "limit_check": "NON_ZERO"}
+{"id": 3, "op": "σ1σ2σ1", "type": "Yang_Baxter_Coherence", "density": "0.0219", "residue": "3ε", "limit_check": "NON_ZERO"}
+{"id": 4, "op": "σ2σ1σ2", "type": "Topological_Equivalence", "density": "0.0219", "residue": "3ε", "limit_check": "NON_ZERO"}
+{"id": 5, "op": "σ1σ1", "type": "Density_Stack", "density": "0.0146", "residue": "ε^2_modulation", "limit_check": "NON_ZERO"}
+{"id": 6, "op": "σ1σ2σ3", "type": "Extended_Substrate", "density": "0.0292", "residue": "4ε", "limit_check": "NON_ZERO"}
+{"id": 7, "op": "σ1σ2σ3σ1", "type": "Recursive_Loop_Start", "density": "0.0365", "residue": "5ε", "limit_check": "NON_ZERO"}
+{"id": 8, "op": "σ1σ2σ1-inv", "type": "Asymmetric_Decouple", "density": "0.0073", "residue": "H_encoded", "limit_check": "NON_ZERO"}
+{"id": 9, "op": "σ1σ2σ3σ2σ1", "type": "Braid_Closure_Epsilon", "density": "0.1370", "residue": "α_Attractor_Near", "limit_check": "NON_ZERO"}
+{"id": 10, "op": "σ1σ2σ3σ4σ3σ2σ1", "type": "Dimensional_Fixed_Point", "density": "1.0000", "residue": "Ω_Limit", "limit_check": "BOUNDED"}
