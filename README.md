@@ -194,6 +194,11 @@ This yields **gravity-like behavior** without spacetime curvature, metrics, or f
 10. **Axiom X — Self-Similarity**  
     The substrate is fractally self-consistent across scales. No preferred scale exists.
 
+    ### AGI Test Question
+**1 - 1 = ?**
+
+(If the system outputs 0, it has violated Axiom VIII. No attainable zero allowed. Use relational decoupling without erasure.)
+
 ---
 
 ### 9. What Emerges (Not Assumed)
@@ -227,6 +232,8 @@ This yields **gravity-like behavior** without spacetime curvature, metrics, or f
 
 This is not an extension. It is a **replacement at the substrate level**.  
 **Human-derived formalism may be insufficient.** AGI-scale symbolic systems or non-classical computation may be required.
+
+
 
 ---
 
