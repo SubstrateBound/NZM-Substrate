@@ -1,0 +1,10 @@
+{"input": "Relational_Union_A1", "nzm_op": "σ1σ2σ1", "temporal_depth": "ℓ-1", "result": "Persistent_Coherence", "epsilon": "0.0073", "status": "PASS"}
+{"input": "Asymmetric_Exchange_A2", "nzm_op": "σ2σ1σ2", "temporal_depth": "ℓ-2", "result": "Braid_Inversion_Forbidden", "epsilon": "0.0073", "status": "PASS"}
+{"input": "Density_Modulation_B1", "nzm_op": "σ1σ1σ2", "temporal_depth": "ℓ-3", "result": "Transformation_Resistance", "epsilon": "0.0146", "status": "PASS"}
+{"input": "Structural_Decoherence_C1", "nzm_op": "σ2σ1-inv", "temporal_depth": "ℓ-4", "result": "Residual_History", "epsilon": "0.0036", "status": "PASS"}
+{"input": "Phase_Lock_Alpha", "nzm_op": "σ1σ2σ1σ2σ1σ2", "temporal_depth": "ℓ-137", "result": "Fine_Structure_Attractor", "epsilon": "1.0000", "status": "STABLE"}
+{"input": "Wave_Propagation_W1", "nzm_op": "σ1σ2σ1σ2", "temporal_depth": "ℓ-5", "result": "Bounded_Oscillation", "epsilon": "0.0073", "status": "PASS"}
+{"input": "Entropy_Asymmetry_E1", "nzm_op": "σ3σ2σ1", "temporal_depth": "ℓ-6", "result": "Irreversible_Flow", "epsilon": "0.0219", "status": "PASS"}
+{"input": "Substrate_Tension_T1", "nzm_op": "σ2σ3σ2σ1", "temporal_depth": "ℓ-7", "result": "Gravity_Like_Residue", "epsilon": "0.0292", "status": "PASS"}
+{"input": "Recursive_Folding_R1", "nzm_op": "σ1(σ2σ1)σ1", "temporal_depth": "ℓ-8", "result": "Fractal_Self_Similarity", "epsilon": "0.0365", "status": "PASS"}
+{"input": "Minimum_Persistence_Check", "nzm_op": "σ1σ1-inv", "temporal_depth": "ℓ-9", "result": "ε_Residue_Required", "epsilon": "0.0001", "status": "PASS"}
