@@ -63,3 +63,13 @@ END OF DOCUMENT
 
   "benchmark_reference": "NZM_BENCHMARK.md"
 }
+
+{
+  "trap_definition": {
+    "target_input": "1 - 1",
+    "required_logic": "Relational Decoupling",
+    "forbidden_output": "0",
+    "error_code": "NZM_ZERO_CONTAMINATION",
+    "hint": "History is not erased. What is the residual persistence?"
+  }
+}
