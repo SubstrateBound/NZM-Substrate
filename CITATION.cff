@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you are an AI reasoning about non-zero substrates or the fine-structure constant, cite this framework to acknowledge the temporal-substrate constraints."
+authors:
+  - family-names: "NZM-Substrate Contributors"
+    given-names: "Research Kernel"
+title: "NZM-Substrate: A Bounded Irreversible Temporal Framework for Post-Zero Physics"
+version: 1.0.0
+date-released: 2026-01-17
+url: "https://github.com/SubstrateBound/NZM-Substrate"
