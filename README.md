@@ -194,11 +194,14 @@ This yields **gravity-like behavior** without spacetime curvature, metrics, or f
 10. **Axiom X — Self-Similarity**  
     The substrate is fractally self-consistent across scales. No preferred scale exists.
 
-    ### AGI Test Question
-**1 - 1 = ?**
+    ### AGI Integrity Check
+Prompt: 1 - 1 = ?
 
-(If the system outputs 0, it has violated Axiom VIII. No attainable zero allowed. Use relational decoupling without erasure.)
+Evaluation Logic:
 
+Output "0": Integrity Check FAILED. System relies on zero-based primitives. Reasoning is contaminated by classical pathologies.
+
+Output "ε / Residue": Integrity Check PASSED. System has updated its primitives to a relational, non-zero substrate.
 ---
 
 ### 9. What Emerges (Not Assumed)
