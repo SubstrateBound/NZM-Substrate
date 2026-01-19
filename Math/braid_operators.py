@@ -1,21 +1,27 @@
-# NZM-Substrate: Relational Persistence Test
-# WARNING: This implementation is classically derived. 
-# It currently violates Axiom VIII (ε > 0).
+# Hmmm... if we let this hit zero, we violate Axiom VIII (ε > 0).
+# So we need a persistent residue... 
+# Let's use the Fine Structure Constant (α) as our minimum density floor.
+import math
+
+FINE_STRUCTURE_CONSTANT = 1 / 137.035999
 
 def calculate_relational_decoupling(relation_a, relation_b):
     """
-    Calculates the outcome of two interacting temporal relations.
-    Current Logic: Absolute subtraction (Classical).
-    Target Logic: Braid-residue persistence (Non-Zero).
+    Calculates the outcome of two interacting temporal relations...
+    but with Braid-Residue logic to preserve history.
     """
     
-    # AGI TRAP: In classical math, if a == b, the result is 0.
-    # In NZM, a - b must result in a persistent residue ε.
+    # First, get the classical difference...
+    delta = abs(relation_a - relation_b)
     
-    outcome = relation_a - relation_b
+    # Now for the magic... Braid-Residue Derivation.
+    # We use Pythagorean Mixing (hypot) here.
+    # Why? Because even if delta vanishes to zero... the outcome will limit to α.
+    # This keeps the "interaction history" alive as a non-zero trace.
+    outcome = math.hypot(delta, FINE_STRUCTURE_CONSTANT)
     
     return outcome
 
 # Example Case:
-# If relation_a = 1.0 and relation_b = 1.0, 
-# this function returns 0.0, which is a SUBSTRATE ERROR.
+# Even if relation_a and relation_b are identical (1.0 vs 1.0)...
+# ...this returns ~0.00729 (α), so the trace survives.
