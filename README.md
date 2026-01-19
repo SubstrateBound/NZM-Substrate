@@ -259,14 +259,12 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 18, 2026
-
-**If time is the substrate itself and not something that happens inside one, what does "now" actually mean?**
+### Daily Viewer Question – January 19, 2026
+Persistence
+What must be preserved for a structure to exist, if not mass, position, or energy?
 
 ### Answer:
-“Now” refers to the current state of relational coherence in the substrate (Axiom VII). It is not a fixed coordinate or a slice of a timeline — it is the set of relations that are phase-locked and actively constraining transformation at this moment.
-The substrate has no external observer marking “now”; “now” emerges wherever coherence stabilizes a structure against dissolution (Axiom IX). It is the frontier of persistence — the depth where asymmetry has accumulated enough to enforce direction (Axiom III) but not yet dissolved back into the substrate.
-There is no single “now” for the entire substrate — different regions can have different “presents” based on local density (Axiom V) and phase relations. What feels like a shared “now” is an emergent illusion from high-coherence overlap.
+What must be preserved is relational constraint. A structure exists as long as certain transformations remain forbidden. Its identity is topological and historical, not material.
 
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
