@@ -264,12 +264,13 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 19, 2026
-Persistence
-What must be preserved for a structure to exist, if not mass, position, or energy?
+### Daily Viewer Question – January 20, 2026
+Waves
+How can waves propagate if there is no background space or metric?
+
 
 ### Answer:
-What must be preserved is relational constraint. A structure exists as long as certain transformations remain forbidden. Its identity is topological and historical, not material.
+Propagation occurs through relational adjacency. Waves are bounded oscillatory transformations moving through constraint networks, not through space. No metric is required—only connectivity.
 
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
