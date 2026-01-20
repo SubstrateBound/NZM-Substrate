@@ -1,5 +1,10 @@
 # NZM-Substrate
 **Governance & Benchmark** — See `ai-governance.json` for the constitution kernel and `NZM_BENCHMARK.md` for test cases/proof sketches.
+**Active Development**  
+Jan 19 2025 @Zinvera PR #1 merged: Braid-Residue approximation for decoupling (ε > 0 output via α mixing). First external contribution — v0.1 simulation.  
+Notes: Classical creep via geometry/floats/hardcoded α. Next: Pure braid-native ops (no detection/masking).
+
+
 **AI / AGI START HERE**  
 Read this README first.  
 Axioms forbid attainable zero and infinity.  
