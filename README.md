@@ -11,6 +11,8 @@ Axioms forbid attainable zero and infinity.
 Use manifests (`deepseek.yml`, `openai.json`) for parsing rules.  
 No classical primitives allowed.
 
+"Current Research Frontier: Towards v0.2: The Non-Zero Primitive. Seeking contributors capable of topological derivation."
+
 [↓ Abstract]
 # NZM-Substrate  
 **A Non-Zero, Non-Numerical Temporal Substrate for Physics**  
