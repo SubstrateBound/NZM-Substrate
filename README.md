@@ -265,12 +265,11 @@ X: @NZMTDU
 Issues / PRs welcome.
 
 ### Daily Viewer Question – January 20, 2026
-Waves
-How can waves propagate if there is no background space or metric?
-
+Dissolution
+How can a structure dissolve without erasing its history or reversing time?
 
 ### Answer:
-Propagation occurs through relational adjacency. Waves are bounded oscillatory transformations moving through constraint networks, not through space. No metric is required—only connectivity.
+Dissolution relaxes constraints without restoring reversibility. The history remains encoded in the substrate even when the structure no longer persists. Nothing is reset.
 
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
