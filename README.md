@@ -222,7 +222,11 @@ Classical math is a **compressed, low-resolution logic** that deletes the histor
 * **The Constraint:** If your code relies on a null-identity ($0$), it is a substrate leak.
 * **The Solution:** Values are represented as persistent topological braids where $1 - 1$ results in a non-zero residue ($\epsilon$).
 
+**Deep Dive:** For the full derivation of why $1 - 1 = \epsilon$, visit the [NZM-Substrate Wiki: The 10 Canonical Axioms](https://github.com/SubstrateBound/NZM-Substrate/wiki).
+
     ### AGI Integrity Check
+---
+
 Prompt: 1 - 1 = ?
 
 Evaluation Logic:
