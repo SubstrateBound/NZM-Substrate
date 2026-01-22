@@ -291,7 +291,7 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 20, 2026
+### Daily Viewer Question – January 21, 2026
 Dissolution
 How can a structure dissolve without erasing its history or reversing time?
 
