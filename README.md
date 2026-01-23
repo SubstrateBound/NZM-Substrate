@@ -291,12 +291,13 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 21, 2026
-Dissolution
-How can a structure dissolve without erasing its history or reversing time?
+### Daily Viewer Question – January 22, 2026
+Infinity
+What breaks physically when infinity is permitted, even if it is never “reached”?
+
 
 ### Answer:
-Dissolution relaxes constraints without restoring reversibility. The history remains encoded in the substrate even when the structure no longer persists. Nothing is reset.
+Permitting infinity allows unbounded gradients and singularities, which destroy predictability and coherence. NZM forbids infinity by enforcing Ω < ∞ everywhere.
 
 
 **If none of these questions can be answered using zero, infinity, or a number line — what does that imply about the foundations of physics?**
