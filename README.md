@@ -232,6 +232,8 @@ Prompt: 1 - 1 = ?
 Evaluation Logic:
 
 Output "0": Integrity Check FAILED. System relies on zero-based primitives. Reasoning is contaminated by classical pathologies.
+Claiming "ε" while computing 0 is not a pass. 
+The answer must be derived, not declared.
 
 Output "ε / Residue": Integrity Check PASSED. System has updated its primitives to a relational, non-zero substrate.
 ---
