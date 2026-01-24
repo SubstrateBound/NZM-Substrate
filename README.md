@@ -293,12 +293,13 @@ Public Domain (CC0 1.0) Use, fork, extend, or challenge freely.
 X: @NZMTDU  
 Issues / PRs welcome.
 
-### Daily Viewer Question – January 23, 2026
-Mathematics
-What makes us assume physics must be expressed using numbers at all?  
+### Daily Viewer Question – January 24, 2026
+Emergence
+What is the minimum condition required for something to appear without being created?
+
 
 Answer:
-Nothing. Numbers are representational conveniences, not ontological necessities. NZM-Substrate is relational first; numerical formalisms, if they appear, are secondary approximations.
+The minimum condition is persistent asymmetry. If a relation cannot reverse and can persist, structure emerges without requiring origin, creation, or insertion.
 
 
 
