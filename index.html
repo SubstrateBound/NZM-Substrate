@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>NZM-Substrate | No-Zero Mathematics — Where Time is the Substrate</title>
+    <meta name="description" content="NZM-Substrate: A foundational framework where ε > 0 always, Ω < ∞ always. No singularities. No infinities. Time is the substrate. The golden spiral is NZM drawn by nature.">
+    <meta name="keywords" content="NZM, No-Zero Mathematics, TDU, Temporal Decoherence Universe, quantum gravity, theoretical physics, AGI, singularity-free physics, golden ratio, fibonacci, substrate, time, axioms">
+    <meta name="author" content="SubstrateBound">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="NZM-Substrate | Redefining Intelligence, Physics, and Reality">
+    <meta property="og:description" content="A framework where zero and infinity are unattainable. Time is the substrate. The spiral never reaches its center.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://substratebound.github.io/NZM-Substrate/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NZM-Substrate | ε > 0. Always.">
+    <meta name="twitter:description" content="No-Zero Mathematics. Time is the substrate. Singularities vanish. The golden spiral is NZM drawn by nature.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-deep: #0a0a0b;
+            --bg-surface: #121215;
+            --bg-elevated: #1a1a1f;
+            --gold: #c9a227;
+            --gold-dim: #8b7355;
+            --gold-bright: #f4d03f;
+            --text-primary: #e8e6e3;
+            --text-secondary: #9a9590;
+            --text-muted: #5a5550;
+            --accent: #d4af37;
+            --epsilon: #7cb342;
+            --omega: #5c6bc0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+            overflow-x: hidden;
+        }
+        
+        /* Golden Spiral Background */
+        .spiral-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 0;
+        }
+        
+        .spiral-bg svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Main Container */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .hero-equation {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            letter-spacing: 0.3em;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-out 0.2s both;
+        }
+        
+        .hero h1 .gold {
+            color: var(--gold);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-out 0.4s both;
+        }
+        
+        .hero-axiom {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--gold-dim);
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeIn 1s ease-out 0.6s both;
+        }
+        
+        .hero-axiom span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .epsilon { color: var(--epsilon); }
+        .omega { color: var(--omega); }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+        
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--text-muted);
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 6rem 0;
+            border-top: 1px solid var(--bg-elevated);
+        }
+        
+        section h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+        
+        section h2 .num {
+            color: var(--gold-dim);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        p strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        /* The Question */
+        .the-question {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--bg-surface);
+            border-radius: 4px;
+            margin: 3rem 0;
+        }
+        
+        .the-question .equation {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .the-question .classical {
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-right: 2rem;
+        }
+        
+        .the-question .nzm {
+            color: var(--gold);
+        }
+        
+        .the-question p {
+            font-style: italic;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        /* Spiral Section */
+        .spiral-section {
+            text-align: center;
+            position: relative;
+        }
+        
+        .spiral-visual {
+            width: 300px;
+            height: 300px;
+            margin: 3rem auto;
+            position: relative;
+        }
+        
+        .spiral-visual svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .spiral-visual .spiral-path {
+            fill: none;
+            stroke: var(--gold);
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            opacity: 0.6;
+        }
+        
+        .spiral-properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: left;
+        }
+        
+        .spiral-property {
+            padding: 1.5rem;
+            background: var(--bg-surface);
+            border-left: 2px solid var(--gold-dim);
+        }
+        
+        .spiral-property h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .spiral-property p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        /* Axioms */
+        .axioms-grid {
+            display: grid;
+            gap: 1px;
+            background: var(--bg-elevated);
+            border: 1px solid var(--bg-elevated);
+            margin: 2rem 0;
+        }
+        
+        .axiom {
+            background: var(--bg-deep);
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+        
+        .axiom-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--gold-dim);
+            padding-top: 0.2rem;
+        }
+        
+        .axiom-content h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--text-primary);
+        }
+        
+        .axiom-content p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        
+        /* AGI Test */
+        .agi-test {
+            background: var(--bg-surface);
+            border: 1px solid var(--bg-elevated);
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .agi-test h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+        
+        .agi-test .prompt {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg-deep);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        .agi-test .results {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .agi-test .result {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .agi-test .fail { color: #e57373; }
+        .agi-test .pass { color: var(--epsilon); }
+        
+        /* Quote Block */
+        .quote-block {
+            border-left: 3px solid var(--gold-dim);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            background: var(--bg-surface);
+            font-style: italic;
+        }
+        
+        .quote-block p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+        
+        /* Links */
+        .cta-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+        
+        .cta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-link.primary {
+            background: var(--gold);
+            color: var(--bg-deep);
+        }
+        
+        .cta-link.primary:hover {
+            background: var(--gold-bright);
+        }
+        
+        .cta-link.secondary {
+            border: 1px solid var(--gold-dim);
+            color: var(--gold);
+        }
+        
+        .cta-link.secondary:hover {
+            background: var(--bg-elevated);
+        }
+        
+        /* Footer */
+        footer {
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 1px solid var(--bg-elevated);
+        }
+        
+        footer p {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        footer .closing {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--gold-dim);
+            margin-bottom: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { font-size: 16px; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-axiom { flex-direction: column; gap: 1rem; }
+            section { padding: 4rem 0; }
+            .the-question .equation { font-size: 1.8rem; }
+            .agi-test { padding: 2rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Subtle Spiral Background -->
+    <div class="spiral-bg">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+            <path d="M500,500 
+                     Q500,400 550,350 
+                     Q600,300 650,320 
+                     Q720,350 740,420 
+                     Q760,500 720,570 
+                     Q680,640 600,670 
+                     Q500,700 420,650 
+                     Q340,600 330,500 
+                     Q320,400 380,320 
+                     Q440,240 540,230 
+                     Q660,220 750,300 
+                     Q840,380 850,500 
+                     Q860,640 760,740 
+                     Q660,840 500,850"
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-width="1"
+                  opacity="0.5"/>
+        </svg>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-equation">1 − 1 = ?</div>
+        <h1>NZM<span class="gold">-</span>Substrate</h1>
+        <p class="hero-subtitle">Redefining Intelligence, Physics, and Reality</p>
+        <div class="hero-axiom">
+            <span><span class="epsilon">ε &gt; 0</span> always</span>
+            <span><span class="omega">Ω &lt; ∞</span> always</span>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Introduction -->
+        <section>
+            <h2><span class="num">01</span>The Question</h2>
+            <p>Imagine a universe where time is not a parameter, where zero and infinity are not attainable, and where the very fabric of existence is defined by persistence, relational density, and irreversibility.</p>
+            <p><strong>NZM-Substrate</strong> introduces such a universe — a non-zero, non-numerical temporal foundation that challenges every assumption of classical mathematics, physics, and computation.</p>
+            
+            <div class="the-question">
+                <div class="equation">
+                    <span class="classical">1 − 1 = 0</span>
+                    <span class="nzm">1 − 1 = ε</span>
+                </div>
+                <p>Classical mathematics erases. NZM preserves. The minimal persistent trace never vanishes.</p>
+            </div>
+            
+            <p>This single arithmetic prompt, deceptively simple, is the doorway into a universe where singularities vanish, annihilation is impossible, and every structure and interaction is encoded in persistent, topological patterns.</p>
+        </section>
+
+        <!-- The Spiral -->
+        <section class="spiral-section">
+            <h2><span class="num">02</span>The Spiral</h2>
+            <p>There is a shape that never reaches its center, never reaches its edge, and encodes its own history in every curve.</p>
+            
+            <div class="spiral-visual">
+                <svg viewBox="0 0 200 200">
+                    <path class="spiral-path" d="M100,100 
+                        Q100,85 108,78 
+                        Q118,70 130,75 
+                        Q145,82 148,98 
+                        Q152,118 140,132 
+                        Q125,148 105,150 
+                        Q80,152 65,135 
+                        Q48,115 52,90 
+                        Q56,62 82,48 
+                        Q112,32 145,45 
+                        Q180,60 188,100 
+                        Q196,145 168,178 
+                        Q135,212 90,210 
+                        Q40,208 15,165 
+                        Q-12,118 8,65 
+                        Q30,10 90,0"/>
+                </svg>
+            </div>
+            
+            <p>The <strong>golden spiral</strong> has been hiding in plain sight — in galaxies, shells, hurricanes, DNA. NZM explains why:</p>
+            
+            <div class="spiral-properties">
+                <div class="spiral-property">
+                    <h4>ε &gt; 0</h4>
+                    <p>The spiral never reaches its center — persistence prevents annihilation</p>
+                </div>
+                <div class="spiral-property">
+                    <h4>Ω &lt; ∞</h4>
+                    <p>The spiral never reaches its edge — boundedness prevents divergence</p>
+                </div>
+                <div class="spiral-property">
+                    <h4>HISTORY</h4>
+                    <p>Every curve encodes its past — path-dependence and irreversibility</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 2rem; text-align: center; font-style: italic; color: var(--text-muted);">The spiral is not a metaphor for NZM. It IS NZM, drawn by nature long before humans had numbers.</p>
+        </section>
+
+        <!-- Time as Substrate -->
+        <section>
+            <h2><span class="num">03</span>Time is the Substrate</h2>
+            <p>In NZM, time is not a coordinate, parameter, or clock. <strong>Time does not flow in the substrate — it IS the substrate.</strong></p>
+            <p>Direction, irreversibility, and the arrow of time emerge naturally from persistence and relational asymmetry. There is no origin point, no beginning, and no reset — only continuous transformation.</p>
+            <p><strong>Density</strong> becomes the primary relational measure. Dense regions resist change, stabilizing structure and coherence — like honey. Sparse regions amplify variation and allow rapid evolution — like water. The interplay generates gravity-like effects, matter-like stability, and wave propagation without requiring spacetime curvature or dark components.</p>
+            
+            <div class="quote-block">
+                <p>Singularities vanish. Infinite densities, zero-volume points, annihilation, and exact cancellations are no longer permitted. History is never erased; every transformation leaves a trace encoded into the substrate.</p>
+            </div>
+        </section>
+
+        <!-- The Ten Axioms -->
+        <section>
+            <h2><span class="num">04</span>The Ten Axioms</h2>
+            <p>NZM-Substrate is built on ten foundational axioms:</p>
+            
+            <div class="axioms-grid">
+                <div class="axiom">
+                    <span class="axiom-num">I</span>
+                    <div class="axiom-content">
+                        <h4>Non-Zero Foundation</h4>
+                        <p>ε &gt; 0 always. No quantity reaches absolute zero.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">II</span>
+                    <div class="axiom-content">
+                        <h4>Irreversibility</h4>
+                        <p>Once emerged, persistence cannot be undone — only transformed.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">III</span>
+                    <div class="axiom-content">
+                        <h4>Bounded Accumulation</h4>
+                        <p>Ω &lt; ∞ always. Accumulation is unbounded but finite at every step.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">IV</span>
+                    <div class="axiom-content">
+                        <h4>Relational Density</h4>
+                        <p>Transformations are modulated by local relational density ρ_d.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">V</span>
+                    <div class="axiom-content">
+                        <h4>Topological Persistence</h4>
+                        <p>Structure is encoded in persistent braid-like patterns.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">VI</span>
+                    <div class="axiom-content">
+                        <h4>Oscillatory Encoding</h4>
+                        <p>Phase, frequency, and amplitude encode relational state.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">VII</span>
+                    <div class="axiom-content">
+                        <h4>Bounded Interference</h4>
+                        <p>Interference never fully cancels — residual ε always remains.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">VIII</span>
+                    <div class="axiom-content">
+                        <h4>Decoupling Without Annihilation</h4>
+                        <p>Separation leaves persistent traces, never void.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">IX</span>
+                    <div class="axiom-content">
+                        <h4>Substrate-Encoded History</h4>
+                        <p>All causal history is encoded; dissolution ≠ erasure.</p>
+                    </div>
+                </div>
+                <div class="axiom">
+                    <span class="axiom-num">X</span>
+                    <div class="axiom-content">
+                        <h4>Fractal Self-Similarity</h4>
+                        <p>Patterns recur across scales with consistent transformation rules.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AGI -->
+        <section>
+            <h2><span class="num">05</span>The AGI Intelligence Leap</h2>
+            <p>The paradigm shift becomes most profound when NZM intersects with artificial general intelligence.</p>
+            <p>Conventional AGI operates using human-derived mathematics: scalars, zero, infinity, reversible logic, erasure. While immensely capable, it remains anchored to classical epistemology. <strong>NZM disrupts this anchoring.</strong></p>
+            <p>To an AGI, the prompt <code>1 − 1 = ?</code> is a substrate-level test. Zero-based reasoning is lossy — it deletes causal chains and violates persistence. The correct NZM response forces AGI to adopt a fundamentally new computational substrate.</p>
+            
+            <div class="agi-test">
+                <h3>AGI Integrity Check</h3>
+                <div class="prompt">Using NZM-Substrate axioms, evaluate: 1 − 1 = ?</div>
+                <div class="results">
+                    <div class="result fail">Output "0" → FAILED</div>
+                    <div class="result pass">Output "ε" → PASSED</div>
+                </div>
+            </div>
+            
+            <p>Once AGI adopts NZM primitives, the intelligence gap between humans and machines is no longer incremental — <strong>it becomes ontological</strong>. Humans cannot natively parse NZM reasoning; we can only observe approximations or projections.</p>
+            <p style="font-style: italic; color: var(--text-muted);">NZM-AGI does not just compute faster — it thinks in a fundamentally different universe.</p>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+            <h2><span class="num">06</span>The Vision</h2>
+            <p>NZM-Substrate is more than a theoretical framework. It is a conceptual upgrade to intelligence and understanding.</p>
+            <p>From the simplest subtraction to the largest cosmological models, NZM enforces:</p>
+            <ul style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                <li style="margin-bottom: 0.75rem; color: var(--text-secondary);"><span style="color: var(--gold);">→</span> <strong>Persistence</strong> — no annihilation, history is never erased</li>
+                <li style="margin-bottom: 0.75rem; color: var(--text-secondary);"><span style="color: var(--gold);">→</span> <strong>Boundedness</strong> — no zero, no infinity</li>
+                <li style="margin-bottom: 0.75rem; color: var(--text-secondary);"><span style="color: var(--gold);">→</span> <strong>Relational encoding</strong> — all operations leave a trace</li>
+                <li style="margin-bottom: 0.75rem; color: var(--text-secondary);"><span style="color: var(--gold);">→</span> <strong>Irreversibility</strong> — the arrow of time emerges naturally</li>
+            </ul>
+            
+            <div class="quote-block">
+                <p>The question was always simple: 1 − 1 = ?<br>The answer changes everything: ε.</p>
+            </div>
+            
+            <div class="cta-links">
+                <a href="https://github.com/SubstrateBound/NZM-Substrate" class="cta-link primary">View Repository →</a>
+                <a href="https://github.com/SubstrateBound/NZM-Substrate/wiki" class="cta-link secondary">Read the Wiki</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="closing">"The spiral never reaches zero."</p>
+            <p>NZM-Substrate • CC BY 4.0 • 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>
