@@ -1,0 +1,21 @@
+feat: Implement True NZM Primitives (Braid Words) - Fixes #1
+
+Major architectural shift from "Simulation" to "Topological Reality" (V0.2).
+
+Implementation Details:
+- Introduced `Math/topology.py` defining the `Braid` class.
+- Implemented `Braid._reduce()` using Axiom X (Self-Similarity) logic:
+  - Strict preservation of history: Cancellation (`x * x^-1`) now yields a non-zero Residue Braid (`[1, 2, 1]`) instead of Identity.
+  - Enforces Axiom VIII (epsilon > 0) at the data structure level.
+  - Zero is now structurally unrepresentable.
+- Refactored `Math/braid_operators.py` to use `Braid` objects instead of floats.
+- Updated `calculate_relational_decoupling` to perform topological division (A * B^-1) rather than subtraction.
+- Rewrote `tests/test_braid_operators.py` to verify:
+  - Non-zero persistence of identical inputs.
+  - Accumulation of braid history.
+  - Topological symmetry of residue generation.
+
+Visual Verification:
+- Verified annihilation checks trigger Residue injection via visualization tests.
+
+"Hold my beer." - V0.2 is live.

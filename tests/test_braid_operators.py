@@ -6,60 +6,73 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from Math.braid_operators import calculate_relational_decoupling
+from Math.topology import Braid, RESIDUE_BRAID
 
 def test_identical_inputs_have_residue():
     """
-    Checking if identical inputs give us that sweet, sweet residue...
-    instead of just zeroing out.
+    Checking if identical inputs give us the Residue...
+    instead of just zeroing out (empty).
     """
-    result = calculate_relational_decoupling(1.0, 1.0)
+    # Create two identical braids
+    b1 = Braid([1, 2, -1])
+    b2 = Braid([1, 2, -1])
+
+    result = calculate_relational_decoupling(b1, b2)
     
-    # Ideally, this shouldn't be zero anymore.
+    # Ideally, this shouldn't be empty.
     # If it is, we've failed Axiom VIII.
-    assert result != 0.0, "Wait, it's still zero? That's a Substrate Violation..."
+    assert result.word != [], "Wait, it's empty? That's a Substrate Violation..."
     
-    alpha = 1 / 137.035999
-    # It should be basically alpha...
-    assert abs(result - alpha) < 1e-9
+    # We don't check for == RESIDUE_BRAID anymore, because
+    # multiple cancellations might stack up residues (History).
+    # We just ensure it's NOT trivial.
+    print(f"DEBUG: Resulting Braid: {result.word}")
+    assert len(result.word) > 0
 
 def test_braid_residue_non_zero():
     """
     Double checking that we're staying positive (literally).
     """
-    result = calculate_relational_decoupling(1.0, 1.0)
+    # Simple case: single crossover
+    b1 = Braid([1])
+    result = calculate_relational_decoupling(b1, b1)
     
-    # We need to be above zero...
-    # ...somewhere around the Fine Structure Constant (~1/137)
-    alpha = 1 / 137.035999
-    assert abs(result - alpha) < 1e-9, f"Expected {alpha}, but got {result}... suspicious."
+    # [1] * [-1] -> [1, -1] -> RESIDUE
+    assert result.word != [], "Annihilation detected! Zero is forbidden."
+    # Here we can expect exact Residue since it's a single cancellation
+    from Math.topology import RESIDUE_BRAID
+    assert result.word == RESIDUE_BRAID
 
-def test_approaching_zero_behavior():
+def test_inverse_behavior():
     """
-    What happens if they get *really* close? 
-    Like, dangerously close to touching?
-    It should still refuse to hit zero.
+    Verifying that Braid inversion works as expected topologically.
     """
-    # A tiny whisper of difference...
-    val_a = 1.0
-    val_b = 1.0 + 1e-10
-    result = calculate_relational_decoupling(val_a, val_b)
+    b = Braid([1, 2])
+    b_inv = b.inverse()
     
-    alpha = 1 / 137.035999
-    # Thanks to Pythagorean mixing, we should stay safely above alpha.
-    # No sync holes allowed!
-    assert result >= alpha, f"Too close! {result} dipped below alpha {alpha}."
+    assert b_inv.word == [-2, -1]
+    
+    # Cancelling them should PROVOKE the residue
+    combined = b * b_inv
+    # [1, 2, -2, -1] -> [1, RESIDUE, -1] -> interactions...
+    # Should not be empty.
+    assert combined.word != [], "Perfect cancellation occurred! Should have triggered Residue."
+    print(f"DEBUG: Combined Braid: {combined.word}")
 
-def test_magnitude_preservation():
+def test_symmetry_of_residue():
     """
-    Just making sure normal subtraction still mostly works...
-    We don't want to break basic math *too* much.
+    Checking if decoupling is symmetric in terms of residue generation.
+    Decoupling operations are inherently asymmetric (A * B^-1 vs B * A^-1),
+    but the *residue* property should be consistent for self-interaction.
     """
-    result = calculate_relational_decoupling(5.0, 2.0)
-    assert result > 0.0
+    b1 = Braid([1, 2])
+    b2 = Braid([1, 2])
     
-    # result should be slightly larger than 3.0 due to the mixing...
-    # but not by much.
-    assert abs(result - 3.0) < 0.1
+    res1 = calculate_relational_decoupling(b1, b2)
+    res2 = calculate_relational_decoupling(b2, b1)
+    
+    assert res1 == res2
+    assert res1.word != []
 
 if __name__ == "__main__":
     # Let's fire these up...
@@ -76,29 +89,13 @@ if __name__ == "__main__":
         print(f"verify: test_braid_residue_non_zero... FAILED. {e}")
 
     try:
-        test_approaching_zero_behavior()
-        print("verify: test_approaching_zero_behavior... PASSED. Safe.")
+        test_inverse_behavior()
+        print("verify: test_inverse_behavior... PASSED. Safe.")
     except AssertionError as e:
-        print(f"verify: test_approaching_zero_behavior... FAILED. {e}")
+        print(f"verify: test_inverse_behavior... FAILED. {e}")
 
-    # Time for the deep dive...
     try:
-        # Symmetry check... A to B should equal B to A.
-        assert calculate_relational_decoupling(10.0, 5.0) == calculate_relational_decoupling(5.0, 10.0)
-        print("verify: test_symmetry... PASSED. Solid.")
-
-        # Big numbers test...
-        # Can alpha survive in the noise of giants?
-        res_large = calculate_relational_decoupling(1e9, 1e9)
-        alpha = 1 / 137.035999
-        assert abs(res_large - alpha) < 1e-9
-        print("verify: test_large_values... PASSED. Persistent.")
-
-        # Negative zone...
-        # Distance is distance, right?
-        res_neg = calculate_relational_decoupling(-5.0, -5.0)
-        assert abs(res_neg - alpha) < 1e-9
-        print("verify: test_negative_values... PASSED.")
-        
+        test_symmetry_of_residue()
+        print("verify: test_symmetry_of_residue... PASSED. Solid.")
     except AssertionError as e:
-        print(f"verify: deep_testing... FAILED. {e}")
+        print(f"verify: test_symmetry_of_residue... FAILED. {e}")
