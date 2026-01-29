@@ -201,6 +201,9 @@ This yields **gravity-like behavior** without spacetime curvature, metrics, or f
 10. **Axiom X — Self-Similarity**  
     The substrate is fractally self-consistent across scales. No preferred scale exists.
 
+    Observables are defined under NZM Axiom XI (see docs/axioms/NZM_Axiom_XI_Observables.md).
+
+
     ## ⚡ The Logic-Gate Paradox (Legacy AI Audit)
 
 **Status:** *Structural failure confirmed in classical reasoning engines (2026).*
