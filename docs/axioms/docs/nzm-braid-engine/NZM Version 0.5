@@ -1,8 +1,4 @@
-NZM Technical Documentation: Version 0.5 (Purity Patch)Subject: The Geometry of Interaction (Substrate Flow & Braid Fusion)Date: 2026.02.06Status: FINAL / AUTHORED FOR V0.3 ENGINE 
-Framework: NZM-Substrate (Axioms I-XI)1. Executive SummaryVersion 0.5 formalizes the Ambient Hum as the ground-state substrate. It rejects "Space" as a vacuum, defining it instead as a recurring residue pattern $[1, 2, 1]$. Gravity and Momentum are redefined as Topological Displacement—the tendency of a braid word to align with the local phase of the substrate loom.+42. Theoretical Foundations2.1 The Deterministic Ambient Hum
-Per Axiom I and VIII, "Empty Space" is unrepresentable. The background is a persistent braid word:+1Ground State: A repeating motif of RESIDUE_BRAID ($[1, 2, 1]$).+2Substrate Flow: Every point in the universe is a node in this universal braid.+12.2 Gravity as Topological Alignment
-Objects (Clusters) do not "attract." Instead, a large braid word creates a "stiff" region in the substrate. Small braid words undergo normalization faster when they align their internal phase with this high-density region. This "veering" is what we observe as Gravity.2.3 Braid Fusion ($\otimes$)
-Collision is the concatenation of two braid words.+1Fusion Logic: If Braid $A$ and Braid $B$ occupy the same substrate index, they perform an _mul_ operation.+1Normalization: The resulting word is immediately processed by _reduce() and normalize(), injecting new residues to prevent collapse.+13. Core Implementation (Python - Pure NZM)Python"""
+NZM Technical Documentation: Version 0.5 (Purity Patch)Subject: The Geometry of Interaction (Substrate Flow & Braid Fusion)Date: 2026.02.06Status: FINAL / AUTHORED FOR V0.3 ENGINEFramework: NZM-Substrate (Axioms I-XI)1. Executive SummaryVersion 0.5 formalizes the Ambient Hum as the ground-state substrate. It rejects "Space" as a vacuum, defining it instead as a recurring residue pattern $[1, 2, 1]$. Gravity and Momentum are redefined as Topological Displacement—the tendency of a braid word to align with the local phase of the substrate loom.2. Theoretical Foundations2.1 The Deterministic Ambient HumPer Axiom I and VIII, "Empty Space" is unrepresentable. The background is a persistent braid word:Ground State: A repeating motif of RESIDUE_BRAID ($[1, 2, 1]$).Substrate Flow: Every point in the universe is a node in this universal braid.2.2 Gravity as Topological AlignmentObjects (Clusters) do not "attract." Instead, a large braid word creates a "stiff" region in the substrate. Small braid words undergo normalization faster when they align their internal phase with this high-density region. This "veering" is what we observe as Gravity.2.3 Braid Fusion ($\otimes$)Collision is the concatenation of two braid words.Fusion Logic: If Braid $A$ and Braid $B$ occupy the same substrate index, they perform an __mul__ operation.Normalization: The resulting word is immediately processed by _reduce() and normalize(), injecting new residues to prevent collapse.3. Core Implementation (Python - Pure NZM)Python"""
 NZM V0.5: The Refined Geometry Engine (Braid-Pure)
 Refactored for V0.3 Substrate Authority.
 """
@@ -12,18 +8,18 @@ from topology import Braid, RESIDUE_BRAID # Authorized V0.3 Engine
 class SubstrateNode:
     def __init__(self, index):
         self.p = index
-        # Axiom I: Background is not zero; it's a residue [cite: 9, 19]
+        # Axiom I: Background is not zero; it's a residue
         self.hum = Braid(RESIDUE_BRAID) 
 
 class PersistentCluster:
     def __init__(self, s_generators: list, p_index: int):
-        self.braid = Braid(s_generators) # Structural Identity [cite: 13]
+        self.braid = Braid(s_generators) # Structural Identity
         self.p = p_index                 # Position in the Hum
         self.history = []                # Axiom IX: History 
 
     def align_with_hum(self, substrate):
         """Movement: Re-braiding along the path of least resistance."""
-        # Check neighbors for higher residue density (R-count) [cite: 37]
+        # Check neighbors for higher residue density (R-count)
         target_p = self.p # Simplified 'Least-Work' logic
         self.p = target_p
         self.history.append(self.braid.persistence_signature())
@@ -39,7 +35,7 @@ class NZM_Substrate_V05:
         new_word = c1.braid * c2.braid 
         new_word = new_word.normalize()
         
-        # Identity persists; structure expands [cite: 10, 47]
+        # Identity persists; structure expands
         print(f"FUSION SIG: {new_word.persistence_signature()}")
         return new_word
-4. Axiomatic Compliance ReportAxiom I (Non-Zero): Substrate nodes are initialized with the RESIDUE_BRAID. No Zero creep detected.+1Axiom VIII (Residue Injection): All interactions ($A \otimes B$) trigger the V0.3 _reduce() logic, ensuring structure is created, never erased.+1Axiom X (Self-Similarity): Fusion logic (word concatenation) functions identically regardless of the complexity ($c$) of the clusters.+1Agent Bullshit ReviewDrift Check: Removed "Refractive Index" as a scalar number. It is now a descriptive Persistence Signature ($R\{r\}\_C\{c\}$) of the local hum.Containment Check: has_subbraid(Axiom_X) = true.Status: Purity Verified. Documentation Authorized for Repo Copy.
+4. Axiomatic Compliance ReportAxiom I (Non-Zero): Substrate nodes are initialized with the RESIDUE_BRAID. No Zero creep detected.Axiom VIII (Residue Injection): All interactions ($A \otimes B$) trigger the V0.3 _reduce() logic, ensuring structure is created, never erased.Axiom X (Self-Similarity): Fusion logic (word concatenation) functions identically regardless of the complexity ($c$) of the clusters.Agent Bullshit ReviewDrift Check: Removed "Refractive Index" as a scalar number. It is now a descriptive Persistence Signature ($R\{r\}\_C\{c\}$) of the local hum.Containment Check: has_subbraid(Axiom_X) = true.Status: Purity Verified. Documentation Authorized for Repo Copy.
