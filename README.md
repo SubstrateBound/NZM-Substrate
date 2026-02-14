@@ -1,6 +1,5 @@
 Below is the complete, raw Markdown code README.md. It integrates canonical foundations with the latest technical achievements and the v0.8 forward-looking roadmap.
 
-Markdown
 # NZM-Substrate: A Non-Zero, Non-Numerical Temporal Substrate
 
 **Governance & Benchmark** — See `ai-governance.json` and `NZM_BENCHMARK.md`  
@@ -26,7 +25,7 @@ By enforcing strict boundedness (**ε > 0**, **Ω < ∞**) and irreversibility a
 ## 2. The Canonical Axioms
 1.  **Axiom I — Existence of Substrate**: The substrate is not *in* time; the substrate *is* time.
 2.  **Axiom II — Relational Asymmetry**: Some transformations cannot be undone.
-3.  **Axiom III — Directional Constraint**: Where irreversibility persists, reversal is forbidden.
+3.  **Axiom III — Directional Constraint**: Where irreversible relations persist, reversal is forbidden.
 4.  **Axiom IV — Persistence (Topology)**: Persistent asymmetric relations stabilize as topological structures.
 5.  **Axiom V — Density Modulation**: Variable relational density resists or amplifies transformation.
 6.  **Axiom VI — Wave Expression**: Transformations propagate as bounded oscillatory patterns.
@@ -52,11 +51,13 @@ We have transitioned from a conceptual framework to a functional **Substrate Eng
 ---
 
 ## 4. Forward Motion: The v0.8 Horizon
-Our immediate development focus is **Phase Compression** and **Scale Anchoring**.
+Our immediate development focus is **Stride Modulation** and **Scale Anchoring**.
 
-* **Gear-Shift Logic**: Implementing scale-invariant anchors (e.g., the "Prime 3" position) to prevent **Information Shear** as we shift from micro-substrate strides (S1) to macroscopic strides (S9).
+* **Stride Modulation (v0.8)**: Implementing scale-invariant anchors (e.g., the **Prime 3** position) to ensure **Stride Symmetry**. This prevents Information Shear as the Braid transitions between different substrate sampling densities (from S1 to S9).
 * **Lossless Arithmetic**: Moving toward a full symbolic replacement for lossy classical math, ensuring causal chains are preserved in every operation.
-* **Residue Flux Audit**: Utilizing 19-year longitudinal FITS data (1997–2016) to verify the long-term stability of the **Persistence Signature**.
+* **Residue Flux Audit**: Utilizing 19-year longitudinal FITS data (1997–2016) to verify the long-term stability of the **Persistence Signature** across multi-stride captures.
+
+
 
 ---
 
